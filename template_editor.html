@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="finance software, home accounting software, personal finance software UK, accounting software, bookkeeping software, accounts software, home finance software, business accounting	software, small	business accounting	software, submit VAT return, accounting	packages" />
+  <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+  <meta name="description" content="Home Accounting Software Template Editor " />
+  <link rel="canonical" href="http://Businesshelp.accountz.com/template_editor.html" />
+  <title>Accountz - Template Editor</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="css/global.css" type="text/css" />
+  <script>
+  
+      // Element to move, time in ms to animate
+      function scrollTo(element, duration) {
+          var e = document.documentElement;
+          if(e.scrollTop===0){
+              var t = e.scrollTop;
+              ++e.scrollTop;
+              e = t+1===e.scrollTop--?e:document.body;
+          }
+          scrollToC(e, e.scrollTop, element, duration);
+      }
+  
+      // Element to move, element or px from, element or px to, time in ms to animate
+      function scrollToC(element, from, to, duration) {
+          if (duration <= 0) return;
+          if(typeof from === "object")from=from.offsetTop;
+          if(typeof to === "object")to=to.offsetTop;
+  
+          scrollToX(element, from, to, 0, 1/duration, 20, easeOutCuaic);
+      }
+  
+      function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
+          if (t01 < 0 || t01 > 1 || speed<= 0) {
+              element.scrollTop = xTo;
+              return;
+          }
+          element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+          t01 += speed * step;
+          
+          setTimeout(function() {
+              scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+          }, step);
+      }
+  
+      function easeOutCuaic(t){
+          t--;
+          return t*t*t+1;
+      }
+  
+      function insertAfter(newNode, referenceNode) {
+          referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+      }
+  </script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-84505212-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <a href="https://plus.google.com/110833302773263755599" rel="publisher"></a>
+  <main class="container content">
+        <div class="container header header--haz">
+        <div class="header-wrapper page-wrap">
+            <img src="images/banner.png" alt="Accountz logo">
+            <div class="controls-wrapper">
+                <a href="./welcome.html" class="home-btn">
+                    <svg x="0px" y="0px" viewBox="0 0 58.365 58.365" width="24" height="24">
+                        <path d="M57.863,26.632L29.182,0L0.502,26.632c-0.404,0.376-0.428,1.009-0.052,1.414c0.374,0.404,1.009,0.427,1.413,0.052 l4.319-4.011v3.278v31h16v-18c0-3.866,3.134-7,7-7s7,3.134,7,7v18h16v-31v-3.278l4.319,4.011c0.192,0.179,0.437,0.267,0.681,0.267 c0.269,0,0.536-0.107,0.732-0.319C58.291,27.641,58.267,27.008,57.863,26.632z" fill="#FFFFFF"></path>
+                    </svg>
+                </a>
+                <span class="print-btn" onclick="window.print()" title="print this page">
+                    <svg viewBox="0 0 60 60" width="24" height="24">
+                        <g>
+                            <path d="M42,43H18c-0.553,0-1,0.447-1,1s0.447,1,1,1h24c0.553,0,1-0.447,1-1S42.553,43,42,43z" fill="#FFFFFF" />
+                            <path d="M42,48H18c-0.553,0-1,0.447-1,1s0.447,1,1,1h24c0.553,0,1-0.447,1-1S42.553,48,42,48z" fill="#FFFFFF" />
+                            <path d="M51,17V0H9v17H0v34h6v3h3v6h42v-6h3v-3h6V17H51z M11,2h38v15H11V2z M49,54v4H11v-4V37h38V54z M50,32c-2.757,0-5-2.243-5-5 s2.243-5,5-5s5,2.243,5,5S52.757,32,50,32z" fill="#FFFFFF" />
+                            <circle cx="50" cy="27" r="3" fill="#FFFFFF" />
+                        </g>
+                    </svg>
+                </span>
+    	<div class="gcse-search">
+    	<form action="search.html">
+    	<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+    	</form></div>
+            </div>
+        </div>
+    </div>
+        <div class="page-wrap">    
+        <aside class="col-xs-12 col-md-4">
+            <header>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <input id="group-1" type="checkbox" hidden />
+                            <label for="group-1"><span class="fa fa-angle-right">➤</span>Videos</label>
+                            <ul class="group-list">
+                                <li><a href="./video_quick_tour.html">Quick Tour</a></li>
+                                <li><a href="./video_accounts_and_expenses.html">Accounts and Expenses</a></li>
+                                <li><a href="./video_bank_reconciliation.html">Bank Reconciliation</a></li>
+                                <li><a href="./video_bank_import.html">Bank Statement Import</a></li>
+                                <li><a href="./video_budgeting_tab.html">Budgeting</a></li>
+                                <li><a href="./video_automated_transactions.html">Automated Transactions & Forecasting</a></li>
+                                <li><a href="./video_continuation_file.html">Continuation File</a></li>
+                                <li><a href="./video_split_transactions.html">Split Transactions</a></li>
+                                <li><a href="./video_views.html">Views</a></li>
+                                <li><a href="./video_importing_your_data_from_msmoney.html">Importing your data from MS Money</a></li>
+                                <li><a href="./video_multicurrency.html">Multi-currency</a></li>
+                                <li><a href="./video_create_12_month_income_expense_report.html">How to Create 12 Month Income & Expense Report</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="group-2" type="checkbox" hidden />
+                            <label for="group-2"><span class="fa fa-angle-right">➤</span>Quick Start guide</label>
+                            <ul class="group-list">
+                                <li><a href="./installing_the_application.html">Installing the application</a></li>
+                                <li><a href="./easy_steps.html">Easy Steps</a></li>
+                                <li><a href="./dashboard.html">The Dashboard</a></li>
+                                <li><a href="./using_home_accountz.html">Using Home Accountz</a></li>
+                                <li><a href="./document_designer_update.html">The Document Designer</a></li>
+                                <li><a href="./online_backup.html">Accountz Online Backup and Recovery</a></li>
+                                <li><a href="./mobile_app.html">Accountz Mobile App</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="group-3" type="checkbox" hidden />
+                            <label for="group-3"><span class="fa fa-angle-right">➤</span>Tutorials</label>
+                            <ul class="group-list">
+                                <li><a href="./entering_transactions.html">Entering Transactions</a></li>
+                                <li><a href="./opening_balances.html">Opening Balances</a></li>
+                                <li><a href="./reconciling_bank_and_credit_card_statements.html">Reconciling Bank and Credit Card Statements</a></li>
+                                <li><a href="./creating_and_customising_document_templates.html">Creating and Customising Document Templates</a></li>
+                                <li><a href="./reports.html">Reports</a></li>
+                                <li><a href="./file_import.html">Importing Data</a></li>
+                                <li><a href="./creating_and_customising_views.html">Creating and Customising Views</a></li>
+                                <li><a href="./forecasting.html">Forecasting</a></li>
+                                <li><a href="./shares.html">Shares</a></li>
+                                <li><a href="./multi_currency.html">Multi-currency</a></li>
+                                <li><a href="./table_toolbars.html">Table Toolbars</a></li>
+                                <li><a href="./columns.html">Columns</a></li>
+                                <li><a href="./views.html">Views</a></li>
+                                <li><a href="./backing_up_your_data.html">Manually Backing up your Data</a></li>
+                                <li><a href="./rapid_data_entry.html">Data Entry Tips</a></li>
+                                <li><a href="./password_protection.html">Password Protection</a></li>
+                                <li><a href="./document_editor.html">Document Editor</a></li>
+                                <li><a href="./template_editor.html">Template Editor</a></li>
+                                <li><a href="./custom_fields.html">Custom Fields</a></li>
+                                <li><a href="./accounts_manager.html">Accounts Manager</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="group-4" type="checkbox" hidden />
+                            <label for="group-4"><span class="fa fa-angle-right">➤</span>Essential Answers</label>
+                            <ul class="group-list">
+                                <li><a href="./creating_a_continuation_file.html">Creating a Continuation File</a></li>
+                                <li><a href="./locked_transactions.html">Locked Transactions</a></li>
+                                <li><a href="./mortgage_transactions.html">Mortgage Transactions</a></li>
+                                <li><a href="./opening_different_work_files.html">Opening Different Work Files</a></li>
+                                <li><a href="./how_to_post_entries_just_to_my_bank_account.html">How To Post Entries Just To My Bank Account</a></li>
+                                <li><a href="./creating_using_template_transactions.html">Creating & Using Template Transactions</a></li>
+                                <li><a href="./incomplete_transaction_error_message.html">Incomplete Transaction Error Message</a></li>
+                                <li><a href="./creating_automated_entries.html">Creating Automated Entries</a></li>
+                                <li><a href="./viewing_individual_account_transactions.html">Viewing Individual Account Transactions</a></li>
+                                <li><a href="./viewing_group_account_transactions.html">Viewing Group Account transactions</a></li>
+                                <li><a href="./viewing_all_account_transactions.html">Viewing All Account Transactions</a></li>
+                                <li><a href="./viewing_account_balances.html">Viewing Account Balances</a></li>
+                                <li><a href="./creating_accounts.html">Creating Accounts</a></li>
+                                <li><a href="./editing_account_types.html">Editing Account Types</a></li>
+                                <li><a href="./creating_a_budget.html">Creating A Budget</a></li>
+                                <li><a href="./create_a_categorised_income_and_expenditure_report.html">Create a Categorised Income & Expenditure Report Displaying Monthly Totals</a></li>
+                                <li><a href="./create_a_report_with_brought_forward_balances.html">Create a Report (e.g. Bank Account) with Consolidated Balances Brought Forward</a></li>
+                                <li><a href="./how_to_sort_transactions_in_date_order.html">How to Sort Transactions into Date Order</a></li>
+                                <li><a href="./how_to_make_a_backup_on_a_memory_stick.html">How to Make a Backup on a Memory Stick</a></li>
+                                <li><a href="./how_to_restore_a_backup_from_memory_stick.html">How to Restore a Backup from a Memory Stick</a></li>
+                                <li><a href="./how_to_restore_a_backup_from_bak.html">How to Restore a Backup from the BAK folder</a></li>
+                                <li><a href="./moving_home_accountz_from_one_computer_to_another.html">Moving Home Accountz from one computer to another</a></li>
+                                <li><a href="./splitting_transactions.html">Splitting Transactions</a></li>
+                                <li><a href="./how_to_enter_negative_figures_in_home_accountz.html">How to Enter Negative Figures in Home Accountz</a></li>
+                                <li><a href="./how_to_edit_the_regularity_of_local_backups.html">How to Edit the Regularity of Local Backups</a></li>
+                                <li><a href="./how_to_show_deleted_accounts_in_the_accounts_balances_budgeting_component.html">How to Show Deleted Accounts in the Accounts, Balances & Budgeting Component</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="group-5" type="checkbox" hidden />
+                            <label for="group-5"><span class="fa fa-angle-right">➤</span>The Application Menus</label>
+                            <ul class="group-list">
+                                <li>
+                                    <input id="sub-group-1" type="checkbox" hidden />
+                                    <label for="sub-group-1"><span class="fa fa-angle-right">➤</span>File</label>
+                                    <ul class="sub-group-list">
+                                        <li><a href="./easy_steps.html">Easy Steps</a></li>
+                                        <li><a href="./file_new.html">New</a></li>
+                                        <li><a href="./file_open.html">Open</a></li>
+                                        <li><a href="./dashboard.html">The Dashboard</a></li>
+                                        <li><a href="./continuation_file.html">Continuation File</a></li>
+                                        <li><a href="./file_history.html">History</a></li>
+                                        <li><a href="./file_properties.html">Properties</a></li>
+                                        <li><a href="./file_import.html">Import</a></li>
+                                        <li><a href="./file_import_personal_accountz.html">New (Import Personal Accountz)</a></li>
+                                        <li><a href="./mobile_app_settings.html">Mobile App Settings</a></li>
+                                        <li><a href="./make_a_backup.html">Make a Backup</a></li>
+                                        <li><a href="./restore_a_backup.html">Restore a Backup</a></li>
+                                        <li><a href="./online_backup_settings.html">Online Backup Settings</a></li>
+                                        <li><a href="./local_backup_settings.html">Local Backup Settings</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input id="sub-group-2" type="checkbox" hidden />
+                                    <label for="sub-group-2"><span class="fa fa-angle-right">➤</span>Accounts</label>
+                                    <ul class="sub-group-list">
+                                        <li><a href="./accounts_balances_and_budgeting.html">Accounts, Balances and Budgeting</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input id="sub-group-3" type="checkbox" hidden />
+                                    <label for="sub-group-3"><span class="fa fa-angle-right">➤</span>Transactions</label>
+                                    <ul class="sub-group-list">
+                                        <li><a href="./all_transactions.html">All Transactions</a></li>
+                                        <li><a href="./template_transfers.html">Template Transactions</a></li>
+                                        <li><a href="./automated_transactions.html">Automated Transactions</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input id="sub-group-4" type="checkbox" hidden />
+                                    <label for="sub-group-4"><span class="fa fa-angle-right">➤</span>Payees</label>
+                                    <ul class="sub-group-list">
+                                        <li><a href="./payees.html">Payees</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input id="sub-group-5" type="checkbox" hidden />
+                                    <label for="sub-group-5"><span class="fa fa-angle-right">➤</span>Documents</label>
+                                    <ul class="sub-group-list">
+                                        <li><a href="./templates.html">Templates</a></li>
+                                        <li><a href="./templates_builder.html">Templates Builder</a></li>
+                                        <li><a href="./reset_templates.html">Reset Templates</a></li>
+                                        <li><a href="./convert_old_template.html">Convert Old Template</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input id="sub-group-6" type="checkbox" hidden />
+                                    <label for="sub-group-6"><span class="fa fa-angle-right">➤</span>Tools</label>
+                                    <ul class="sub-group-list">
+                                        <li><a href="./configuration.html">Configuration</a></li>
+                                        <li><a href="./language_selection.html">Language Selection</a></li>
+                                        <li><a href="./calculator.html">Calculator</a></li>
+                                        <li><a href="./error_reporting.html">Send Email to Support</a></li>
+                                        <li><a href="./desk_diary.html">Desk Diary</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input id="sub-group-7" type="checkbox" hidden />
+                                    <label for="sub-group-7"><span class="fa fa-angle-right">➤</span>Help</label>
+                                    <ul class="sub-group-list">
+                                        <li><a href="./quick_start_guide.html">Quick Start Guide</a></li>
+                                        <li><a href="./online_help.html">Online Help</a></li>
+                                        <li><a href="./help_forums.html">Help Forums</a></li>
+                                        <li><a href="./accountz_website.html">Accountz Website</a></li>
+                                        <li><a href="./set_licence_wizard.html">Set Licence Wizard</a></li>
+                                        <li><a href="./check_for_upgrade.html">Check for Update</a></li>
+                                        <li><a href="./reset_online_services_password.html">Reset Online Services Password</a></li>
+                                        <li><a href="./communication_preferences.html">Communication Preferences</a></li>
+                                        <li><a href="./about.html">About</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </aside>
+            <div class="main-content col-xs-12 col-md-8">
+                        <div id="TOC" class="toc-wrapper">
+                <div class="well toc">
+                <ul>
+                    <li class="nav-header">Table of Contents</li>
+                </ul>
+                <ul>
+                <li><a href="#template-editor">Template Editor</a><ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#canvas">Canvas</a></li>
+                <li><a href="#left-toolbar">Left Toolbar</a><ul>
+                <li><a href="#text-tool">Text tool</a></li>
+                <li><a href="#line-tool">Line tool</a></li>
+                <li><a href="#square-tool">Square tool</a></li>
+                <li><a href="#ellipse-tool">Ellipse tool</a></li>
+                <li><a href="#image-tool">Image tool</a></li>
+                </ul></li>
+                <li><a href="#right-hand-properties-panel">Right-hand Properties Panel</a><ul>
+                <li><a href="#page-elements">Page Elements</a></li>
+                <li><a href="#position">Position</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#column-visibility">Column Visibility</a></li>
+                <li><a href="#text-3">Text</a></li>
+                <li><a href="#line">Line</a></li>
+                <li><a href="#fill">Fill</a></li>
+                <li><a href="#formats">Formats</a></li>
+                </ul></li>
+                <li><a href="#top-toolbar">Top Toolbar</a></li>
+                <li><a href="#bottom-toolbar">Bottom Toolbar</a></li>
+                </ul></li>
+                </ul>
+                </div>
+            </div>
+                    
+            <h1 id="template-editor">Template Editor</h1>
+            <h2 id="introduction">Introduction</h2>
+            <div class="figure">
+            <img src="images/screenshot_template_editor_home.gif" alt="Accounting Software screenshot template editor home" />
+            <p class="caption">Accounting Software screenshot template editor home</p>
+            </div>
+            <p>The Template Editor enables the user to edit individual document templates.</p>
+            <p>It is launched whenever you select the Edit or Copy option within <a href="templates.html">Documents&gt;Templates</a>, or the <img src="images/edit_icon.gif" alt="Accounting Software edit icon" /> Edit Icon within the Document Editor itself.</p>
+            <p>For users wishing to make universal changes to all their templates, please see the <a href="templates_builder.html">Templates Builder</a> component.</p>
+            <p>There are five options available to facilitate this.</p>
+            <ul>
+            <li><a href="#canvas">Canvas editing</a> - there are a number of keyboard/mouse options for editing the canvas area directly.</li>
+            </ul>
+            <!-- -->
+            <ul>
+            <li>The <a href="#left-toolbar">left hand toolbar</a> enables the user to add text, lines, shapes and images.</li>
+            </ul>
+            <!-- -->
+            <ul>
+            <li>The <a href="#right-hand-properties-panel">right hand properties panel</a> enables the user to edit the attributes of the elements which make up the template.</li>
+            </ul>
+            <!-- -->
+            <ul>
+            <li>The <a href="#top-toolbar">top toolbar</a> enables the user to select different pages within the template (where applicable), export the template to PDF (for print previewing), and finish editing the template.</li>
+            </ul>
+            <!-- -->
+            <ul>
+            <li>The <a href="#bottom-toolbar">bottom toolbar</a> enables the user to resize the template for previewing purposes.</li>
+            </ul>
+            <h2 id="canvas">Canvas</h2>
+            <p>The user can click on the canvas area to select the various different elements which comprise the template. Clicking on an element will select it in the <a href="#page-elements">Page Elements</a> panel below, and display its editable properties accordingly.</p>
+            <p>There are a number of options available for editing the visible elements on the canvas:</p>
+            <p><em>N.B. Mac users - for the following, please read ‘CTRL’ as ‘CMD’.</em></p>
+            <ul>
+            <li>Click/Drag to select/move - Clicking and Dragging enables the user to select items, and (move) drag and drop the item once selected</li>
+            <li>CTRL/Click/Drag - When a screen element is already selected, holding the CTRL button (CMD for Mac) whilst clicking and dragging enables the user to select and group more than one element simultaneously</li>
+            <li>CTRL/Click - Pressing CTRL (CMD for Mac)/Clicking enables the user to select more than one screen element simultaneously</li>
+            <li>Shift + Arrow Key - Enables the user to move the selected screen elements</li>
+            <li>CTRL + C - Enables the user to copy the selected element</li>
+            <li>CTRL + V - Enables the user to paste the copied element (please note, copied items can be pasted into different templates).</li>
+            <li>Resize - a selected element can be resize by pulling on its drag handles</li>
+            <li>Delete - Clicking the delete key deletes the selected element</li>
+            </ul>
+            <p>Right Clicking (CTRL/Click for Mac) a selected screen element launches a menu offering the following options, as per the Page Elements section above:</p>
+            <ul>
+            <li><img src="images/screenshot_property_button_move_to_front.gif" alt="Accounting Software screenshot property button move to front" /> Move to front - moves the selected element to the front</li>
+            <li><img src="images/screenshot_property_button_up.gif" alt="Accounting Software screenshot property button up" /> Move forwards - moves the selected element forwards</li>
+            <li><img src="images/screenshot_property_button_down.gif" alt="Accounting Software screenshot property button down" /> Move backwards - moves the selected element backwards</li>
+            <li><img src="images/screenshot_property_button_move_to_back.gif" alt="Accounting Software screenshot property button move to back" /> Move to back - moves the selected element to the back</li>
+            <li><img src="images/screenshot_property_button_move_inout_table_icon.gif" alt="Accounting Software screenshot property button move in out table icon" /> Move In/Out of table area - moves the selected element in/out of the transaction table</li>
+            <li><img src="images/button_copy_transaction.gif" alt="Accounting Software button copy transaction" /> Copy Selected elements - copies the selected element(s)</li>
+            <li><img src="images/screenshot_property_button_delete.gif" alt="Accounting Software screenshot property button delete" /> Delete - deletes the selected element</li>
+            </ul>
+            <h2 id="left-toolbar">Left Toolbar</h2>
+            <p>This comprises the following tools:</p>
+            <ul>
+            <li><img src="images/button_document_editor_text.gif" alt="Accounting Software button document editor text" /> <strong>Text tool</strong></li>
+            <li><img src="images/button_document_editor_line.gif" alt="Accounting Software button document editor line" /> <strong>Line tool</strong></li>
+            <li><img src="images/button_document_editor_rectangle.gif" alt="Accounting Software button document editor rectangle" /> <strong>Square tool</strong></li>
+            <li><img src="images/button_document_editor_ellipse.gif" alt="Accounting Software button document editor ellipse" /> <strong>Ellipse tool</strong></li>
+            <li><img src="images/button_document_editor_image.gif" alt="Accounting Software button document editor image" /> <strong>Image tool</strong></li>
+            </ul>
+            <p>These tools enable you to add new items to the template.</p>
+            <h3 id="text-tool">Text tool</h3>
+            <p><img src="images/button_document_editor_text.gif" alt="Accounting Software button document editor text" /> The Text tool enables the user to add a text field to the template. Click the Text tool icon, then click where you would like to place the new field on the template. A box will appear prompting you to enter the desired text. It will also ask if you wish to add any dynamic fields (such as date or page number). The Text Field’s size can be adjusted by clicking on the field to select it then dragging the handles to resize it. The Text Field can be further adjusted using the Position, Text and Format options in the Right Toolbar (described below).</p>
+            <h3 id="line-tool">Line tool</h3>
+            <div class="figure">
+            <img src="images/button_document_editor_line.gif" alt="Accounting Software button document editor line" />
+            <p class="caption">Accounting Software button document editor line</p>
+            </div>
+            <p>The Line tool enables the user to draw lines on the template. Click and hold where you want the line to start then move the mouse to the point where you want the line to end. The user can drag and drop the line to move it, or stretch/shrink it using the drag handles. The line’s attributes can be further adjusted via the Position and Line options in the Right Toolbar (described below).</p>
+            <h3 id="square-tool">Square tool</h3>
+            <div class="figure">
+            <img src="images/button_document_editor_rectangle.gif" alt="Accounting Software button document editor rectangle" />
+            <p class="caption">Accounting Software button document editor rectangle</p>
+            </div>
+            <p>The Square tool enables the user to create a square/rectangle on the template. Click and hold the mouse where you want the square/rectangle to start. Drag the mouse to set the size of the square/rectangle. This items’ attributes can be further adjusted using Position, Line and Fill options in the Right Toolbar.</p>
+            <h3 id="ellipse-tool">Ellipse tool</h3>
+            <div class="figure">
+            <img src="images/button_document_editor_ellipse.gif" alt="Accounting Software button document editor ellipse" />
+            <p class="caption">Accounting Software button document editor ellipse</p>
+            </div>
+            <p>The Ellipse tool enables the user to create Curved shapes on the template. Click and hold the mouse on the template to place the shape, and drag to determine size. The item can be further manipulated by dragging/dropping with the mouse, and via the Position, Line and Fill options available in the Right Toolbar.</p>
+            <h3 id="image-tool">Image tool</h3>
+            <div class="figure">
+            <img src="images/button_document_editor_image.gif" alt="Accounting Software button document editor image" />
+            <p class="caption">Accounting Software button document editor image</p>
+            </div>
+            <p>The Image tool enables the user to place an image file into the template. Click the Image tool icon and then click where you would like to place the image file on the template. This will launch a dialogue box prompting you to select an already imported image, or to import a new one. Once the Image has been placed on the template, it can be moved/resized by dragging it with the mouse, and adjusted using the Position, Image and Format options available via the Right Toolbar.</p>
+            <h2 id="right-hand-properties-panel">Right-hand Properties Panel</h2>
+            <p>The panel on the right of the screen enables the user to edit the attributes of the elements which make up the template. It displays a changing list of ‘property boxes’ depending on the <a href="#page-elements">Page Element</a> currently selected (either via the Page Elements panel below, or by clicking on an element in the design window).</p>
+            <p>The Properties Panel offers the following options:</p>
+            <ul>
+            <li><a href="#page-elements">Page Elements</a></li>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#image">Image</a></li>
+            <li><a href="#column-visibility">Column Visibility</a></li>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#line">Line</a></li>
+            <li><a href="#fill">Fill</a></li>
+            <li><a href="#formats">Formats</a></li>
+            </ul>
+            <h3 id="page-elements">Page Elements</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_page_elements.gif" alt="Accounting Software screenshot property page elements" />
+            <p class="caption">Accounting Software screenshot property page elements</p>
+            </div>
+            <p>The Page Elements component details a list of all elements contained within a document template. It enables the user to select elements and re-order/edit them as required.</p>
+            <p>The element at the top of the list is displayed frontmost on the template and the element at the bottom rearmost. To move an element within the list/template use the arrow icons above the table (see below). To delete the element press the Delete button.</p>
+            <p>The list contains the following folders:</p>
+            <ul>
+            <li>Page – this folder comprises everything within the template</li>
+            <li>Table Area – this folder comprises everything contained within the Transaction Table part of the document template</li>
+            </ul>
+            <p>The toolbar above the table offers the following options:</p>
+            <ul>
+            <li><img src="images/screenshot_property_button_move_to_front.gif" alt="Accounting Software screenshot property button move to front" /> Move to front - moves the selected element to the front</li>
+            <li><img src="images/screenshot_property_button_up.gif" alt="Accounting Software screenshot property button up" /> Move forwards - moves the selected element forwards</li>
+            <li><img src="images/screenshot_property_button_down.gif" alt="Accounting Software screenshot property button down" /> Move backwards - moves the selected element backwards</li>
+            <li><img src="images/screenshot_property_button_move_to_back.gif" alt="Accounting Software screenshot property button move to back" /> Move to back - moves the selected element to the back</li>
+            <li><img src="images/screenshot_property_button_move_inout_table_icon.gif" alt="Accounting Software screenshot property button move inout table icon" /> Move In/Out of table area - moves the selected element in/out of the transaction table</li>
+            <li><img src="images/button_copy_transaction.gif" alt="Accounting Software button copy transaction" /> Copy Selected elements - copies the selected element(s)</li>
+            <li><img src="images/screenshot_property_button_delete.gif" alt="Accounting Software screenshot property button delete" /> Delete - deletes the selected element</li>
+            </ul>
+            <p>Clicking an element in this list displays various editable properties fields relevant to the element.</p>
+            <p>Once selected, the component (as relevant) can be edited via the following options:</p>
+            <h3 id="position">Position</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_position.gif" alt="Accounting Software screenshot property position" />
+            <p class="caption">Accounting Software screenshot property position</p>
+            </div>
+            <p>This option enables the user to set the position and alignment of selected component(s).</p>
+            <h4 id="startend-position">Start/End Position</h4>
+            <p>The user can alter the position and size of the selected element by editing the item’s start and end points both horizontally (i.e. x1 and x2) and vertically (y1 and y2).</p>
+            <h4 id="alignment">Alignment</h4>
+            <p>The alignment section offers the following tools:</p>
+            <ul>
+            <li>Horizontal – offers the option to align two or more selected elements horizontally along their left edge, centre, or right edge</li>
+            <li>Vertical - offers the option to align two or more selected elements vertically along their left edge, centre, or right edge</li>
+            <li>Spacing – offers the option to evenly space selected elements horizontally or vertically (requires three or more elements to be selected)</li>
+            </ul>
+            <p>Please note that elements are aligned with the item selected first.</p>
+            <h3 id="table">Table</h3>
+            <p>The Table component enables the user to edit various aspects of the transaction table.</p>
+            <p>It comprises 5 tabs:</p>
+            <h4 id="lines-tab">Lines Tab</h4>
+            <div class="figure">
+            <img src="images/screenshot_property_table_lines.gif" alt="Accounting Software screenshot property table lines" />
+            <p class="caption">Accounting Software screenshot property table lines</p>
+            </div>
+            <p>The Lines tab enables the user to set the following values for Border, Horizontal and Vertical lines within the table:</p>
+            <ul>
+            <li>Width - use the up/down arrows to set the line width</li>
+            <li>Unit Picker - set the line width unit type</li>
+            <li>Line Picker - select line width from the drop down list</li>
+            <li>Transparency - set the linetransparency using the slider</li>
+            </ul>
+            <h4 id="header-tab">Header Tab</h4>
+            <div class="figure">
+            <img src="images/screenshot_property_table_header.gif" alt="Accounting Software screenshot property table header" />
+            <p class="caption">Accounting Software screenshot property table header</p>
+            </div>
+            <p>Within the Header tab the user can edit the following values for table headers:</p>
+            <h5 id="font">Font</h5>
+            <ul>
+            <li>Font Name - set the Font type within the table header</li>
+            <li>Size - Set the font size within the table header</li>
+            <li>Style - Italicise or Embolden the text within the table header</li>
+            <li>Justification - Select if the text is left, centre or right aligned</li>
+            <li>Padding - Set the amount of padding around the text</li>
+            <li>Padding Unit - Set the unit type use for padding</li>
+            </ul>
+            <h5 id="text">Text</h5>
+            <ul>
+            <li>Colour - Set the text colour</li>
+            <li>Transparency - Set the text transparency using the slider</li>
+            </ul>
+            <h5 id="background">Background</h5>
+            <ul>
+            <li>Colour - Set the table header background colour</li>
+            <li>Transparency - Set the table header background transparency using the slider</li>
+            </ul>
+            <h4 id="cell-tab">Cell Tab</h4>
+            <div class="figure">
+            <img src="images/screenshot_property_table_cell.gif" alt="Accounting Software screenshot property table cell" />
+            <p class="caption">Accounting Software screenshot property table cell</p>
+            </div>
+            <p>Within the Cell tab the user can edit the following values for table cells:</p>
+            <h5 id="font-1">Font</h5>
+            <ul>
+            <li>Font Name - set the Font type within the table cells</li>
+            <li>Size - Set the font size within the table cells</li>
+            <li>Style - Italicise or Embolden the text within the table cells</li>
+            <li>Padding - Set the amount of padding around the text</li>
+            <li>Padding Unit - Set the unit type use for padding</li>
+            </ul>
+            <h5 id="text-1">Text</h5>
+            <ul>
+            <li>Colour - Set the text colour</li>
+            <li>Transparency - Set the text transparency using the slider</li>
+            </ul>
+            <h5 id="background-1">Background</h5>
+            <ul>
+            <li>Colour - Set the table cell background colour</li>
+            <li>Transparency - Set the table cell background transparency using the slider</li>
+            </ul>
+            <h4 id="total-tab">Total Tab</h4>
+            <div class="figure">
+            <img src="images/screenshot_property_table_total.gif" alt="Accounting Software screenshot property table total" />
+            <p class="caption">Accounting Software screenshot property table total</p>
+            </div>
+            <p>Within the Total Tab the user can edit the following values for the Total field:</p>
+            <h5 id="font-2">Font</h5>
+            <ul>
+            <li>Font Name - set the Font type within the Total field</li>
+            <li>Size - Set the font size within the Total field</li>
+            <li>Style - Italicise or Embolden the text within the Total field</li>
+            <li>Padding - Set the amount of padding around the text</li>
+            <li>Padding Unit - Set the unit type use for padding</li>
+            </ul>
+            <h5 id="text-2">Text</h5>
+            <ul>
+            <li>Colour - Set the text colour</li>
+            <li>Transparency - Set the text transparency using the slider</li>
+            </ul>
+            <h5 id="background-2">Background</h5>
+            <ul>
+            <li>Colour - Set the Total field background colour</li>
+            <li>Transparency - Set the Total field background transparency using the slider</li>
+            </ul>
+            <h4 id="general-tab">General Tab</h4>
+            <div class="figure">
+            <img src="images/screenshot_property_table_general.gif" alt="Accounting Software screenshot property table general" />
+            <p class="caption">Accounting Software screenshot property table general</p>
+            </div>
+            <p>Within the General tab the user can set the following:</p>
+            <ul>
+            <li>No of Rows - sets the number of rows visible in the table</li>
+            <li>Fill available height - ticking this box causes the table to remain the same (full) size as set on the template; unticking it causes the table to resize to fit the number of rows of data in the individual document</li>
+            </ul>
+            <h3 id="image">Image</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_image.gif" alt="Accounting Software screenshot property image" />
+            <p class="caption">Accounting Software screenshot property image</p>
+            </div>
+            <p>This panel displays the following options:</p>
+            <ul>
+            <li>Image - displays the current image file name</li>
+            </ul>
+            <!-- -->
+            <ul>
+            <li>Image Picker <img src="images/screenshot_property_image_picker_icon.gif" alt="Accounting Software screenshot property image picker icon" /> - click here to select a different image</li>
+            </ul>
+            <!-- -->
+            <ul>
+            <li>Fixed Aspect Ratio - ticking this ensures the image retains its aspect ratio when resized</li>
+            </ul>
+            <!-- -->
+            <ul>
+            <li>Opacity - this slider sets the image opacity</li>
+            </ul>
+            <p>It also offers the following to edit the image border:</p>
+            <ul>
+            <li>Width - use the up/down arrows to set the line width</li>
+            <li>Unit Picker - set the line width unit type</li>
+            <li>Line Picker - select line width from the drop down list</li>
+            <li>Line Pattern Picker - select the line pattern from the drop down list</li>
+            <li>Colour - set the line colour</li>
+            <li>Transparency - set the line transparency using the slider</li>
+            </ul>
+            <h3 id="column-visibility">Column Visibility</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_column_visibility_home.gif" alt="Accounting Software screenshot property column visibility home" />
+            <p class="caption">Accounting Software screenshot property column visibility home</p>
+            </div>
+            <p>This panel enables the user to set various aspects of table column visibility.</p>
+            <ul>
+            <li>Show - ticking/unticking this box adds/removes the selected column to/from the transaction table</li>
+            <li>Column - shows all available columns for this table</li>
+            <li>Order - The user can move the selected column within the table using the up/down arrows (this moves the column left/right in the table)</li>
+            <li>Heading Text - The user can edit the text displayed for the selected column</li>
+            <li>Display Total - ticking this box causes the total for the selected ‘amount’ type column to display at the bottom of the table</li>
+            <li>Width - here the user can edit the width of the selected column</li>
+            <li>Sample Data - edit the sample date displayed for the selected column</li>
+            <li>Data Format - click edit to change the format for amount type columns</li>
+            <li>Alignment - sets the text alignment for the data in the selected column</li>
+            </ul>
+            <h3 id="text-3">Text</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_text.gif" alt="Accounting Software screenshot property text" />
+            <p class="caption">Accounting Software screenshot property text</p>
+            </div>
+            <p>This option enables the user to set the following values for the selected text field:</p>
+            <ul>
+            <li>Font Name – sets the text font</li>
+            <li>Size – sets the font size</li>
+            <li>Padding – sets the padding around the text</li>
+            <li>Style – enables the user to embolden or italicise the text</li>
+            <li>Justification – enables the user to (right/centre/left) justify the text within the text field</li>
+            <li>Alignment – enables the user to align the text (top/centre/bottom) within the text field</li>
+            <li>Edit Text – here the user can edit the existing text in the field</li>
+            <li>Insert Custom Field – enables the user to insert a <a href="custom_fields.html">custom field</a> , such as Date or Page Number, or a user defined field, into the text area</li>
+            <li>Colour – sets the text colour</li>
+            <li>Transparency – sets the text transparency</li>
+            </ul>
+            <h3 id="line">Line</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_line2.gif" alt="Accounting Software screenshot property line 2" />
+            <p class="caption">Accounting Software screenshot property line 2</p>
+            </div>
+            <p>This option enables the user to set the following line values:</p>
+            <ul>
+            <li>Width – sets a value for the line’s width</li>
+            <li>Width Unit – sets the width unit type, i.e. pts, mm, cm, inches</li>
+            <li>Width – sets the line’s width (via a drop down menu)</li>
+            <li>Pattern – sets the line’s pattern, i.e. unbroken, dotted, dashed</li>
+            <li>Colour – sets the line’s colour</li>
+            <li>Transparency – sets the line’s transparency</li>
+            </ul>
+            <p>These apply not only to lines in isolation, but also to the perimeter lines of shapes such as squares or circles added to the template (see above).</p>
+            <h3 id="fill">Fill</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_fill.gif" alt="Accounting Software screenshot property fill" />
+            <p class="caption">Accounting Software screenshot property fill</p>
+            </div>
+            <p>This option enables the user to set the following fill values for a shape (e.g. a square) inserted into the template:</p>
+            <ul>
+            <li>Colour – sets the shape’s fill colour</li>
+            <li>Transparency – sets the shape’s fill transparency</li>
+            </ul>
+            <h3 id="formats">Formats</h3>
+            <div class="figure">
+            <img src="images/screenshot_property_formats.gif" alt="Accounting Software screenshot property formats" />
+            <p class="caption">Accounting Software screenshot property formats</p>
+            </div>
+            <p>This option enables the user to adjust the following formats (previously set in the Templates Builder) for the selected component:</p>
+            <ul>
+            <li>Date Format – e.g. dd/MM/yyyy</li>
+            <li>Date Time Format – e.g. dd/MM/yy HH:mm</li>
+            <li>Time Format – e.g. HH:mm</li>
+            <li>Amount Format – e.g. 0.00</li>
+            </ul>
+            <h2 id="top-toolbar">Top Toolbar</h2>
+            <div class="figure">
+            <img src="images/screenshot_top_toolbar_home.gif" alt="Accounting Software screenshot top toolbar home" />
+            <p class="caption">Accounting Software screenshot top toolbar home</p>
+            </div>
+            <p>This toolbar offers the following options:</p>
+            <ul>
+            <li><strong>Finish Editing</strong> - this finishes editing and closes the Template Editor</li>
+            <li><strong>Page</strong> - this enables the user to view/edit different pages within the template, where applicable</li>
+            <li><strong>PDF</strong> – this enables the user to export the template to PDF</li>
+            </ul>
+            <h2 id="bottom-toolbar">Bottom Toolbar</h2>
+            <div class="figure">
+            <img src="images/screenshot_bottom_toolbar.gif" alt="Accounting Software screenshot bottom toolbar" />
+            <p class="caption">Accounting Software screenshot bottom toolbar</p>
+            </div>
+            <p>This toolbar offers a zoom function enabling the user preview the current template more easily. It comprises of the following options:</p>
+            <ul>
+            <li>Click to show the whole page – decreases the page size to display entire template</li>
+            <li>Click to fill whole available canvas width – sets template width to that of the page</li>
+            <li>Click to increase magnification of whole page – incrementally increases page magnification</li>
+            <li>Click to decrease magnification of whole page – incrementally decreases page magnification</li>
+            <li>Set zoom% - sets zoom value (as a percent, via dropdown list)</li>
+            <li>Mouse coordinates - displays the mouse coordinates on the screen</li>
+            <li>Mouse coordinate units - offers the option to change the unit type displayed for the mouse coordinates</li>
+            </ul>
+                    </div>
+    </div><!-- End of page-wrap on nav.snip.html -->
+  </main>
+  <script type="text/javascript">
+
+    // Adding 'scrollTop' elements to document 
+    var els = document.querySelectorAll('h2, h3');
+    var main = document.querySelector('.content');
+    var lastChild = document.querySelector('.main-content').lastChild;
+
+    function createScrollToTopBtn() {
+        var span = document.createElement("span");
+        var p = document.createElement("p");
+
+        span.className = "goToTheTop";
+        span.innerText = "Top";
+        span.onclick = function() {
+                scrollTo(0, 1000);
+            }
+        p.appendChild(span);
+        return p;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var pH = document.documentElement.clientHeight;
+        var mH = main.offsetHeight;
+
+        if(pH < mH) {
+            var i;
+            for (i = 1; i < els.length; i++) {
+                els[i].parentNode.insertBefore(createScrollToTopBtn(), els[i]);
+            }
+
+            insertAfter(createScrollToTopBtn(), lastChild);
+        }
+    });
+    
+    // Swapping TOC after <h1>
+    var toc = document.querySelector('div.toc-wrapper');
+    var header = document.querySelector('h1');
+    if(header) {
+        insertAfter(toc, header);
+
+        // Adding data-label attr to <h1>
+        var headerText = header.innerText;
+        header.setAttribute("data-label", headerText);
+    }
+
+    // Removal toc if empty
+    var toc = document.querySelector('#TOC');
+    var li = document.querySelectorAll('.toc ul:nth-child(2) li');
+    if(li.length < 2) { 
+        toc.parentNode.removeChild(toc); 
+    }
+
+    // Wrapping iframes in div.videoWrapper
+    var addedToDocument = false;
+    var wrapper = document.createElement("div");
+    wrapper.className = "videoWrapper";
+    var nodesToWrap = document.querySelectorAll("iframe");
+    var j;
+    for (j = 0; j < nodesToWrap.length; j++) {
+        var node = nodesToWrap[j];
+        if (!addedToDocument) {
+            node.parentNode.insertBefore(wrapper, node);
+            addedToDocument = true;
+        }
+        node.parentNode.removeChild(node);
+        wrapper.appendChild(node);
+    }
+  </script>
+</body>
+</html>

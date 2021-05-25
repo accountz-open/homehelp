@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Home Accountz - Quick Start Guide</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="style.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../desktop/template/scripts/constants.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/utils.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/mhutils.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/mhlang.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/mhver.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/settings.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/XmlJsReader.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/loadscreen.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/loadcsh.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/loadparentdata.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/loadprojdata.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/showhidecontrols.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/pageloader.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/andsearchfield.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/mhfhost.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="../desktop/template/scripts/search.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" src="searchfield.js" language="JavaScript1.2"></script>
+  <script type="text/javascript" language="JavaScript1.2">
+  gRootRelPath = ".";
+  gCommonRootRelPath = "..";
+  </script>
+  <!-- Hotjar Tracking Code for homehelp.accountz.co.uk -->
+  <script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:44892, hjsv:4};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
+        b.getElementsByTagName("head")[0].appendChild(c); 
+    })(window,document);
+  </script>
+  <style>
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:300,700);
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%; 
+  
+  /*background: #26a9e1;*/
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.content {
+	min-height: 100%;
+	position: relative;
+	overflow: auto;
+	z-index: 0; 
+}
+
+.background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.top_block {
+	width: 100%;
+	display: block; 
+}
+
+.bottom_block {
+	position: absolute;
+	width: 100%;
+	display: block;
+	bottom: 0; 
+}
+
+.center_block {
+	display: block;
+	width: auto;
+  height: 100%; 
+  margin-left: 231px; 
+}
+
+.block_1 {
+	width: 100%;
+	height: 76px;
+}
+
+.background.block_2 {
+	height: auto !important;
+	padding-bottom: 0;
+	left: 0;
+	width: 231px;
+	margin-top: 76px; 
+}
+
+.block_2 {
+	height: auto;
+	width: 231px;
+	padding-bottom: 0px;
+  margin-top: 0px; 
+}
+
+.background.block_3 {
+	height: auto !important;
+	padding-bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: 231px; 
+  text-align:center;
+  font-size: x-large;
+}
+
+.block_3 {
+  margin-top: 76px; 
+	width: auto;
+	height: 100%;
+	padding-bottom: 0px;
+}
+
+
+
+
+.selected {
+  background: rgba(0,0,0,0.20);
+}
+
+.inputContainer {
+  padding: 20px 10px;
+  border: 1px solid #a9a9a9 
+  background-color: #b71314;
+  position: relative;
+  opacity: 1;
+  clear: both;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.inputContainer:hover:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.05);
+}
+
+h3 {
+  
+  margin: 0; padding: 0; border: 0;
+  display: block;
+
+  text-align:right;
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+
+  color: #000;
+}
+
+.title h3 {
+  text-align:center;
+  font-size: x-large;
+}
+
+.content h3 {
+  width: auto;
+}
+
+.title {
+    float:top;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    border: 0;
+}
+
+.content {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    border: 0;
+}
+
+.content .left{
+    float:left;
+}
+
+.content .logo {
+  float: left;
+  padding-left: 23px;
+}
+
+input {
+  background: #f8f49b;
+  padding: 5px;
+  border: 2px solid rgb(248, 244, 155);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+  </style>
+  <script type="text/javascript">
+      
+      function menuClicked(element, videoId) {
+        document.getElementById('videoframe').src='http://player.vimeo.com/video/'+ videoId;        
+        setSelection(element.id);
+        sendNSCommand('VIDEO_SELECTED|'+ videoId + ' ' + element.getElementsByTagName("h3")[0].innerHTML);
+      }
+
+      function setSelection(id) {
+        var matches = Array.prototype.slice.call( document.body.querySelectorAll('div.inputContainer') )
+
+        matches.forEach( 
+          function( el, i ) { el.setAttribute("class", "inputContainer"); } 
+        );    
+
+        document.getElementById( id ).setAttribute("class", "inputContainer selected");
+      }
+    </script>
+</head>
+<body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45663671-1', 'accountz.com');
+    ga('send', 'pageview');
+
+  </script>
+	<div class="title" style="padding-top: 23px; position: absolute;width: 100%; z-index:1;">
+    <h3>Home Accountz - Quick Start Guide</h3>
+	</div>
+  <div style="position: absolute; bottom:0; left:0;">
+        <img src="home-bottom-corner.jpg"/>
+  </div>
+	<div class="content">
+		<div class="top_block block_1">
+      <div class="content logo" style="padding-top: 14px;">
+        <img src="button.png"/>
+      </div>
+      <div class="content logo" style="float: right; z-index:-1;">
+        <img src="hazsupportvideo.jpg"/>
+      </div>
+		</div>
+		<div class="background block_2">
+		
+			<div class="content">
+        <div class="left">
+            <div id="vid_1" class="inputContainer selected" onclick="menuClicked(this,'91299458');"><h3>Quick Tour</h3></div>
+            <div id="vid_2" class="inputContainer" onclick="menuClicked(this,'97055313');"><h3>Accounts & Expenses</h3></div>
+            <div id="vid_3" class="inputContainer" onclick="menuClicked(this,'99622817');"><h3>Bank Reconciliation</h3></div>
+            <div id="vid_5" class="inputContainer" onclick="menuClicked(this,'102846141');"><h3>Import Statements</h3></div>
+            <div id="vid_6" class="inputContainer" onclick="menuClicked(this,'120673034');"><h3>Budgeting</h3></div>
+            <div id="vid_4" class="inputContainer" onclick="document.location='http://homehelp.accountz.com/desktop/using_home_accountz.html'"><h3>How To Documentation</h3></div>      
+            <!--div id="vid_3" class="inputContainer" onclick="menuClicked(this,'Oyq6812YGo8');"><h3>Adding your Expenses</h3></div>
+            <div id="vid_4" class="inputContainer" onclick="menuClicked(this,'z-50QPnxiU8');"><h3>Importing</h3></div>  
+            <div id="vid_5" class="inputContainer" onclick="menuClicked(this,'vIZ33Nyf-So');"><h3>Reports</h3></div--> 
+        </div>
+        <div class="wSearchField" style="position: absolute; bottom:130px; left:0; ">
+						<input id="searchBox" class="wSearchField" type="search" style="width: 180px; height:30px; margin-left: 10px; font-weight: 900;" data-placeholder="Search help site for ..." onkeydown="searchHelp(event, 'searchBox')" data-search="true" /><a class="wSearchLink" onclick="searchHelp(null, 'searchBox')" href="#"><img src="Search.png" alt="Search" class="wSearchLink" border="0" style="width:100%; max-width:20px; margin-left:3px; margin-bottom: -5px" /></a> 
+	      </div>
+			</div>
+		</div>
+		<div class="background block_3">
+      <iframe id="videoframe" style="border: 0; width: 100%; height: 100%; padding: 0px;" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen src="http://player.vimeo.com/video/91299458"></iframe>
+		</div>
+		<div class="center_block block_3">
+			<div class="content">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
